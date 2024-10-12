@@ -1,0 +1,19 @@
+Respuestas a las preguntas:
+
+a) La relación de agregación entre CollectionProducto y Producto no se dibuja porque probablemente se considera una relación implícita en la implementación de la colección, y no una parte fundamental del diseño del dominio.
+
+b) La clase Factura tiene 4 atributos: fecha, nroFactura, cliente, y detalles.
+
+c) La relación entre Factura y Detalle es una composición, ya que los detalles no tienen sentido sin la factura y son parte integral de ella.
+
+d) La relación entre Factura y Cliente es una asociación, ya que una factura está asociada a un cliente pero ambos pueden existir independientemente.
+
+e) Los atributos de las clases Collections son públicos para facilitar el acceso directo a la colección desde otras partes del sistema, aunque esto podría considerarse una violación del principio de encapsulamiento.
+
+f) Características de los métodos de CollectionClientes:
+
+precargarClientes(): Método estático que inicializa la lista de clientes con datos predefinidos.
+agregarCliente(Cliente): Método estático que añade un nuevo cliente a la colección.
+buscarCliente(long): Método estático que busca y retorna un cliente por su DNI.
+
+Estos métodos son todos estáticos, lo que sugiere que la clase CollectionClientes se utiliza como un repositorio global para manejar los clientes en el sistema.
